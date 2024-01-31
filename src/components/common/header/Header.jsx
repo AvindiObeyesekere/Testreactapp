@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar } from '../../common';
 import logo from './logo.png'
-
+import Search from '../search/Search';
 import './Header.css';
 console.log(logo);
 function Header (){
@@ -13,11 +13,17 @@ function Header (){
               <img src={logo} alt="Logo" />
 
             </section>
+            
             <section className="header-top__navbar">
+           
+            
           <section className="header-top__navigation">
+          
+              <Search/>
+            
             <Navbar />
           </section>
-          <hr className="header-top__seperator" />
+         
         </section>
       </section>
         <section className="header-bottom">

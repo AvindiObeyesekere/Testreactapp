@@ -16,8 +16,9 @@
   .header-top__logo {
     display: flex;
     justify-content:left;
-    
+    width:18%;
     margin-right: 1px;
+    margin-left: 40px;
   }
   
   .header-logo {
@@ -47,7 +48,7 @@
     flex-direction: row;
     justify-content: flex-end;
     margin-right: 5px;
-    background-color:#e8e8e8; ;
+    background-color:#e8e8e8;
   }
   
   .header-bottom {
@@ -95,4 +96,6 @@
   }
   .Logo{
     background-image: url(/src/components/common/header/logo.png);
+    
   }
+  
