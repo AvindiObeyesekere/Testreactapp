@@ -1,26 +1,30 @@
 import React from 'react';
 import { Navbar } from '../../common';
+import logo from './logo.png'
+
+import './Header.css';
+console.log(logo);
 function Header (){
     return(
         <section className="header">
            <section className="header-top">
-            <section className="header-top-logo">
-              <a href="/" className="header">LOGO</a>
-              
-            </section>
-            <section className="header-top_navbar"> 
-                <Navbar />
+            <section className="header-top__logo">
+              {/*<a href="/" className="header-logo">LOGO</a>*/}
+              <img src={logo} alt="Logo" />
 
-               
             </section>
-         
+            <section className="header-top__navbar">
+          <section className="header-top__navigation">
+            <Navbar />
+          </section>
+          <hr className="header-top__seperator" />
         </section>
- 
+      </section>
         <section className="header-bottom">
-            <section className="header-bottom_phone">
+            <section className="header-bottom__phone">
                     99999
             </section>
-            <section className="header-bottom_email">
+            <section className="header-bottom__email">
                     shoppr.info@gmail.com
             </section>
         </section>
